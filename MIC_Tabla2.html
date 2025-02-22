@@ -22,25 +22,25 @@
 	</head>
 	<body>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
+		<!-- <script src="dist/reveal.js"></script> -->
+		<!-- <script src="plugin/notes/notes.js"></script> -->
+		<!-- <script src="plugin/markdown/markdown.js"></script> -->
+		<!-- <script src="plugin/highlight/highlight.js"></script> -->
 		<script src="plugin/math/math.js"></script>
-		<script src="plugin/zoom/zoom.js"></script>
-		<script src="plugin/search/search.js"></script>
-		<script src="plugin/menu/menu.js"></script>
-		<script src="plugin/anything/plugin.js"></script>
-		<script src="plugin/anything/Chart.min.js"></script>
+		<!-- <script src="plugin/zoom/zoom.js"></script> -->
+		<!-- <script src="plugin/search/search.js"></script> -->
+		<!-- <script src="plugin/menu/menu.js"></script> -->
+		<!-- <script src="plugin/anything/plugin.js"></script> -->
+		<!-- <script src="plugin/anything/Chart.min.js"></script> -->
 
 
-	<script src="plugin/revealjs-animated/revealjs-animated.js"></script>
+	<!-- <script src="plugin/revealjs-animated/revealjs-animated.js"></script> -->
 
-	<script src="anything/d3.v3.min.js"></script>				
-	<script src="anything/d3.patch.js"></script>			
-	<script src="anything/d3/queue.v1.min.js"></script>		
-	<script src="anything/d3/topojson.v1.min.js"></script>		
-	<script src="anything/function-plot.js"></script>
+	<!-- <script src="anything/d3.v3.min.js"></script>				 -->
+	<!-- <script src="anything/d3.patch.js"></script>			 -->
+	<!-- <script src="anything/d3/queue.v1.min.js"></script>		 -->
+	<!-- <script src="anything/d3/topojson.v1.min.js"></script>		 -->
+	<!-- <script src="anything/function-plot.js"></script> -->
 
 		<div class="reveal">
 			<div class="slides">
@@ -1241,62 +1241,19 @@ DIRECCIÓN     0        1        2        3        4        5        6        7
 </div>
 		</div>
 
-
-		
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-				controls: true,
-				progress: true,
-				center: true,
-				animate: {
-					autoplay: true
-				},
+				slideNumber: 'h.v',
 				// Learn about plugins: https://revealjs.com/plugins/
-				
-			<!-- autoSlide: 5000, -->
-			<!-- loop: true -->
-	<!-- autoSlideMethod: () => Reveal.right() -->
-  menu: {
-    custom: [
-      {
-        title: 'Links',
-        icon: '<i class="fa fa-external-link">',
-        content: '<h1>Links</h1><ul class="slide-menu-items"><li class="slide-menu-item"><a href="#/0">Portada</a></li><li class="slide-menu-item"><a href="#/1/0/3">p3</a></li><li class="slide-menu-item"><a href="#/2">Características Principales</a></li></ul>'
-      },
-      {
-        title: 'About',
-        icon: '<i class="fa fa-info">',
-        content: '<p>This slidedeck is created with reveal.js</p>'
-      }
-    ],
-    hideMissingTitles: true,
-    useTextContentForMissingTitles: true,
-	transitions: true,
-    themes: true
-	},
-	
-	anything: [
-	 {
-		className: "chart",  
-		initialize: (function(container, options){ container.chart = new Chart(container.getContext("2d"), options);  })
-	 },
-	<!-- plugins: [ RevealAnything ], -->
-	 // ...
-	],
-	
-	plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMath.KaTeX,RevealMenu ],
-	 dependencies: [
-    // Other plugins
-    {src: 'plugin/revealjs-animated/revealjs-animated.js',
-    async: true}
-  ],
-	<!-- plugins: [ RevealMenu ], -->
-	<!-- plugins: [ RevealAnything ], -->
-
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes,RevealMath.KaTeX ]
 			});
 		</script>
 	</body>
