@@ -93,14 +93,27 @@ Normalmente se utiliza un cable de par trenzado para la comunicación CAN. Gener
 
 |Parámetro|SPI|I2C|PODER|
 |-|-|-|-|
-|Velocidad	|3 Mbps a 10 Mbps	|Estándar: 100 Kbps, Rápido: 400 Kbps, Alta la veloidad:3.4 Mbps|	10 KBps a 1 MBps, También depende de la longitud del cable utilizado|
 |Tipo	|Sincrónico	|Sincrónico	|Asincrónico|
 
-Número de cables	3+ (MISO, MOSI, SCK, SS1, SS2…SS(n))	2 cables (SDA, SCL)	2 cables (CAN_H, CAN_L)
-Dúplex	Dúplex completo	Medio dúplex	Medio dúplex
 
+|Parámetro|SPI|I2C|PODER|
+|-|-|-|-|
+|Número de cables|3+ (MISO, MOSI, SCK, SS1, SS2…SS(n))	| cables (SDA, SCL)	|2 cables (CAN_H, CAN_L)|
+|Dúplex	|Dúplex completo	|Medio dúplex	|Medio dúplex|
+---
+# Aplicaciones del protocolo CAN
 
+1. Debido a la robustez y confiabilidad del protocolo CAN, se utilizan en industrias como la automotriz, máquinas industriales, agricultura, equipos médicos, etc.
+2. Como la complejidad del cableado se reduce en CAN, se utilizan principalmente en a	aplicaciones automotrices como automóviles.
+3. El costo de implementación es bajo y el precio de los componentes de hardware también es menor.
+4. Fácil de agregar y quitar los dispositivos de bus CAN.
+---
+# Cómo utilizar el protocolo CAN en Arduino
 
+Como Arduino no incorpora ningún puerto CAN, se utiliza un módulo CAN llamado MCP2515 . Este módulo CAN se conecta a Arduino mediante comunicación SPI. Veamos más detalles sobre el MCP2515 y cómo se conecta a Arduino.
+
+Módulo CAN MCP2515:
+![](mcp2515.jpg)
 
 </textarea>
 				</section>
