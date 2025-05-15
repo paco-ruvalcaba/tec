@@ -115,6 +115,51 @@ Como Arduino no incorpora ningún puerto CAN, se utiliza un módulo CAN llamado 
 Módulo CAN MCP2515:
 ![](mcp2515.jpg)
 
+El módulo MCP2515 cuenta con un controlador CAN, que es un transceptor CAN de alta velocidad . La conexión entre el MCP2515 y el MCU se realiza mediante SPI. Por lo tanto, es fácil de conectar con cualquier microcontrolador con interfaz SPI.
+
+Para principiantes que desean aprender sobre el bus CAN, este módulo es un buen punto de partida. Esta placa CAN SPI es ideal para automatización industrial, domótica y otros proyectos de integración automotriz.
+
+## Características y especificaciones del MCP2515:
+
+- Utiliza el transceptor CAN de alta velocidad TJA1050
+- Dimensiones: 40×28 mm
+- Control SPI para ampliar la interfaz de bus CAN múltiple
+- oscilador de cristal de 8 MHz
+- Resistencia terminal de 120 Ω
+- Tiene llave independiente, indicador LED, indicador de encendido.
+- Admite operación CAN de 1 Mb/s
+- Operación en espera de baja corriente
+- Se pueden conectar hasta 112 nodos
+
+## Pinout del módulo CAN MCP2515:
+
+|Nombre del pin|USAR|
+|-|-|
+|VCC|Pin de entrada de alimentación de 5 V|
+|Tierra|Pin de tierra|
+|CS|Pin de selección SPI SLAVE (activo bajo)|
+|ENTONCES|Cable de entrada y salida esclava maestra SPI|
+|SI|Cable de entrada esclava de salida maestra SPI|
+|SCLK|Pin de reloj SPI|
+|INT|Pin de interrupción MCP2515|
+
+### Objetivo
+Enviar datos del sensor de humedad y temperatura (DHT11) desde Arduino Nano a Arduino Uno a través del módulo de bus CAN MCP2515.
+---
+# Componentes necesarios
+
+- Arduino UNO
+- Arduino NANO
+- DHT11
+- Pantalla LCD de 16x2
+- Módulo CAN MCP2515 – 2
+- Potenciómetro de 10k
+- Tablero de circuitos
+- Cables de conexión
+---
+# Diagrama
+
+![](can_diagrama.png)
 </textarea>
 				</section>
 				
