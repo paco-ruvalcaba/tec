@@ -65,10 +65,40 @@
 ---
 # Introducción a CAN
 
-<small>
-- CAN, también conocida como Red de Área del Controlador, es un bus de comunicación serial diseñado para aplicaciones industriales y automotrices. 
-- Es un protocolo basado en mensajes que se utiliza para la comunicación entre múltiples dispositivos. Cuando se conectan varios dispositivos CAN, como se muestra a continuación, la conexión forma una red que actúa como nuestro sistema nervioso central, permitiendo que cualquier dispositivo se comunique con cualquier otro dispositivo en el nodo.
-</small>
+- <small>CAN, también conocida como Red de Área del Controlador, es un bus de comunicación serial diseñado para aplicaciones industriales y automotrices.</small><br><br>
+- <small>Es un protocolo basado en mensajes que se utiliza para la comunicación entre múltiples dispositivos. Cuando se conectan varios dispositivos CAN, como se muestra a continuación, la conexión forma una red que actúa como nuestro sistema nervioso central, permitiendo que cualquier dispositivo se comunique con cualquier otro dispositivo en el nodo.</small>
+
+![](CAN_com.png)
+
+Una red CAN consta de solo dos cables, CAN High y CAN Low, para la transmisión bidireccional de datos, como se muestra arriba. Normalmente, la velocidad de comunicación CAN oscila entre 50 kbps y 1 Mbps, y la distancia puede variar entre 40 metros (1 Mbps) y 1000 metros (50 kbps).
+
+### Formato del mensaje CAN:
+En la comunicación CAN, los datos se transmiten en la red como un formato de mensaje específico. Este formato de mensaje consta de varios segmentos, pero dos principales son el identificador y los datos que ayudan a enviar y responder mensajes en el bus CAN.   
+
+**Identificador o ID CAN:** El identificador también se conoce como ID CAN o PGN (Número de Grupo de Parámetros). Se utiliza para identificar los dispositivos CAN presentes en una red CAN. Su longitud es de 11 o 29 bits, según el tipo de protocolo CAN utilizado.
+
+- CAN estándar: 0-2047 (11 bits)
+- CAN extendido: 0-2 29 -1 (29 bits)
+
+**Datos:** Son los datos del sensor/control que deben enviarse de un dispositivo a otro. Su tamaño puede variar entre 0 y 8 bytes.
+
+**Código de longitud de datos (DLC):** 0 a 8 para la cantidad de bytes de datos presentes.
+
+### Cables utilizados en CAN:
+El protocolo CAN consta de dos cables, CAN_H y CAN_L, para enviar y recibir información. Ambos cables actúan como una línea diferencial , lo que significa que la señal CAN (0 o 1) se representa mediante la diferencia de potencial entre CAN_L y CAN_H. Si la diferencia es positiva y superior a un voltaje mínimo determinado, es 1; si es negativa, es 0.
+
+Normalmente se utiliza un cable de par trenzado para la comunicación CAN. Generalmente, se utiliza una sola resistencia de 120 ohmios en ambos extremos de la red CAN, como se muestra en la imagen. Esto se debe a que la línea debe estar balanceada y conectada al mismo potencial.
+---
+# Comparación de CAN con SPI e I2C
+
+|Parámetro|SPI|I2C|PODER|
+|-|-|-|-|
+|Velocidad	|3 Mbps a 10 Mbps	|Estándar: 100 Kbps, Rápido: 400 Kbps, Alta la veloidad:3.4 Mbps|	10 KBps a 1 MBps, También depende de la longitud del cable utilizado|
+|Tipo	|Sincrónico	|Sincrónico	|Asincrónico|
+
+Número de cables	3+ (MISO, MOSI, SCK, SS1, SS2…SS(n))	2 cables (SDA, SCL)	2 cables (CAN_H, CAN_L)
+Dúplex	Dúplex completo	Medio dúplex	Medio dúplex
+
 
 
 
