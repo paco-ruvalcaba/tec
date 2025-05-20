@@ -170,8 +170,8 @@ Enviar datos del sensor de humedad y temperatura (DHT11) desde Arduino Nano a Ar
 ---
 # Código del proyecto
 
+## CAN Transmitter Code (Arduino Nano):
 ```
-CAN Transmitter Code (Arduino Nano):
 #include <SPI.h>          //Library for using SPI Communication 
 #include <mcp2515.h>      //Library for using CAN Communication
 #include <DHT.h>          //Library for using DHT sensor 
@@ -207,7 +207,10 @@ void loop()
   mcp2515.sendMessage(&canMsg);     //Sends the CAN message
   delay(1000);
 }
-CAN Receiver Code (Arduino UNO):
+```
+
+## CAN Receiver Code (Arduino UNO):
+```
 #include <SPI.h>              //Library for using SPI Communication 
 #include <mcp2515.h>          //Library for using CAN Communication
 #include <LiquidCrystal.h>    //Library for using LCD display
@@ -246,7 +249,6 @@ void loop()
     }
 }
 ```
-
 </textarea>
 				</section>
 				
