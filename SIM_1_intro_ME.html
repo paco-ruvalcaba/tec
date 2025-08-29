@@ -270,7 +270,9 @@ Máquinas como el taladro vertical, el torno, la sierra mecánica, la fresadora 
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
+        animate: {
+          autoplay: true // default is false
+        },
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes,RevealMath.KaTeX ]
 			});
