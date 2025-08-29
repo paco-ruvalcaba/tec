@@ -116,6 +116,172 @@
 
 </section>
 
+<section>
+  <svg width="100" height="100">
+    <circle cx="50" cy="50" r="30" fill="red" class="pulse" />
+  </svg>
+  
+  <style>
+    .pulse {
+      animation: grow 2s infinite;
+    }
+  
+    @keyframes grow {
+      0% { r: 30; }
+      50% { r: 50; }
+      100% { r: 30; }
+    }
+  </style>
+</section>
+
+<section>
+  <svg id="mySVG" width="100" height="100">
+    <circle id="myCircle" cx="50" cy="50" r="30" fill="green" />
+  </svg>
+  
+  <script>
+    const circle = document.getElementById("myCircle");
+    let pos = 50;
+    setInterval(() => {
+      pos = (pos + 10) % 100;
+      circle.setAttribute("cx", pos);
+    }, 500);
+  </script>
+</section>
+
+<section>
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="30" fill="blue" class="circle" />
+</svg>
+
+<style>
+  .circle {
+    transition: fill 0.5s ease;
+  }
+
+  .circle:hover {
+    fill: orange;
+  }
+</style>
+</section>
+
+<section>
+<svg width="100" height="100">
+  <rect x="10" y="10" width="80" height="80" fill="green" class="bounce" />
+</svg>
+
+<style>
+  .bounce {
+    animation: bounce 2s infinite ease-in-out;
+  }
+
+  @keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+</style>
+</section>
+
+<section>
+<svg width="400" height="400">
+  <path d="M10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80"
+        stroke="red" fill="transparent" stroke-width="2"
+        class="draw"/>
+</svg>
+
+<style>
+  .draw {
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: drawPath 3s forwards;
+  }
+
+  @keyframes drawPath {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+</style>
+</section>
+
+<section>
+<svg width="300" height="100">
+  <path d="M10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80"
+        stroke="black" fill="none" stroke-width="2" class="draw" />
+</svg>
+
+<style>
+  .draw {
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: drawPath 3s forwards;
+  }
+
+  @keyframes drawPath {
+    to { stroke-dashoffset: 0; }
+  }
+</style>
+</section>
+
+
+<section>
+<svg width="800" height="500">
+  <!-- SDA and SCL lines -->
+  <line x1="0" y1="50" x2="600" y2="50" stroke="black" stroke-width="2" />
+  <line x1="0" y1="100" x2="600" y2="100" stroke="black" stroke-width="2" />
+
+  <!-- Bit animation -->
+  <circle cx="0" cy="50" r="8" fill="blue">
+    <animate attributeName="cx" from="0" to="600" dur="5s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Clock animation -->
+  <rect x="0" y="90" width="10" height="20" fill="gray">
+    <animate attributeName="x" from="0" to="600" dur="1s" repeatCount="indefinite" />
+  </rect>
+</svg>
+</section>
+
+<section>
+<svg width="800" height="200">
+  <!-- SCL and SDA lines -->
+  <line x1="0" y1="50" x2="800" y2="50" stroke="black" stroke-width="2" />
+  <line x1="0" y1="100" x2="800" y2="100" stroke="black" stroke-width="2" />
+
+  <!-- Master and Slave -->
+  <rect x="50" y="10" width="100" height="30" fill="#0077cc" />
+  <text x="60" y="30" fill="white">Maestro</text>
+
+  <rect x="650" y="10" width="100" height="30" fill="#00aa55" />
+  <text x="660" y="30" fill="white">Esclavo</text>
+
+  <!-- START condition -->
+  <text x="10" y="90" fill="red">START</text>
+
+  <!-- Dirección + R/W -->
+  <circle cx="150" cy="100" r="8" fill="blue">
+    <animate attributeName="cx" from="150" to="300" dur="2s" fill="freeze" />
+  </circle>
+  <text x="160" y="120" fill="black">0x3C + W</text>
+
+  <!-- ACK -->
+  <circle cx="300" cy="100" r="8" fill="green">
+    <animate attributeName="cx" from="300" to="350" dur="1s" begin="2s" fill="freeze" />
+  </circle>
+  <text x="310" y="120" fill="black">ACK</text>
+
+  <!-- Datos -->
+  <circle cx="350" cy="100" r="8" fill="orange">
+    <animate attributeName="cx" from="350" to="500" dur="2s" begin="3s" fill="freeze" />
+  </circle>
+  <text x="360" y="120" fill="black">0xA5</text>
+
+  <!-- STOP condition -->
+  <text x="520" y="90" fill="red">STOP</text>
+</svg>
+</section>
+
 			</div>
 		</div>
 
