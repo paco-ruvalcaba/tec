@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Animación SVG Controlada</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: sans-serif;
+      margin-top: 40px;
+    }
+
+    svg {
+      border: 2px solid #333;
+      margin-bottom: 20px;
+    }
+
+    button {
+      margin: 5px;
+      padding: 8px 16px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      background: #4caf50;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #45a049;
+    }
+
+    button:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+
+  <svg id="miSVG" width="300" height="150">
+    <circle id="bola" cx="50" cy="75" r="20" fill="tomato" />
+  </svg>
+
+  <div>
+    <button id="playBtn">▶ Play</button>
+    <button id="pauseBtn" disabled>⏸ Pausa</button>
+  </div>
+
+  <script>
+    const bola = document.getElementById("bola");
+    const playBtn = document.getElementById("playBtn");
+    const pauseBtn = document.getElementById("pauseBtn");
+
+    let pos = 50;
+    let dir = 2;
+    let animando = false;
+    let frame;
+
+    function animar() {
+      if (pos > 250 || pos < 50) dir *= -1;
+      pos += dir;
+      bola.setAttribute("cx", pos);
+      frame = requestAnimationFrame(animar);
+    }
+
+    playBtn.addEventListener("click", () => {
+      if (!animando) {
+        animando = true;
+        animar();
+        playBtn.disabled = true;
+        pauseBtn.disabled = false;
+      }
+    });
+
+    pauseBtn.addEventListener("click", () => {
+      cancelAnimationFrame(frame);
+      animando = false;
+      playBtn.disabled = false;
+      pauseBtn.disabled = true;
+    });
+  </script>
+
+</body>
+</html>
