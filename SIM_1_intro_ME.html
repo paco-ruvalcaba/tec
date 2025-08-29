@@ -25,6 +25,13 @@
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 
     <!-- <link rel="stylesheet" href="mystyle.css"> -->
+
+<!-- Load content plugin -->
+<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/loadcontent/plugin.js"></script>
+<!-- Animate plugin -->
+<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/animate/plugin.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.1.2/svg.min.js"></script>
+
 	</head>
 	<body>
 
@@ -252,26 +259,23 @@ Máquinas como el taladro vertical, el torno, la sierra mecánica, la fresadora 
 				</section>
 <section>
   <h5>Prueba</h5>
-  <div data-animate data-load="drawing.svg">
-  <!--
-  {
-  "setup": [
-  ...
-  ],
-  "animation": [
-  ...]
-  }
-  -->
+  <div data-animate data-load="circ2.svg">
+    <!--
+    {
+    "setup": [
+    {
+    "element": "#circ",
+    "modifier": "function() { this.animate(1500).ease('<>').scale(.9).loop(true,true);}"
+    }
+    ]
+    }
+    -->
   </div>
+  <!-- <img src="circ2.svg"> -->
 </section>
 			</div>
 		</div>
 
-<!-- Load content plugin -->
-<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/loadcontent/plugin.js"></script>
-<!-- Animate plugin -->
-<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/animate/plugin.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.1.2/svg.min.js"></script>
 
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
@@ -287,7 +291,7 @@ Máquinas como el taladro vertical, el torno, la sierra mecánica, la fresadora 
           autoplay: true // default is false
         },
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [RevealLoadContent, RevealAnimate, RevealMarkdown, RevealHighlight, RevealNotes,RevealMath.KaTeX ]
+				plugins: [RevealLoadContent, RevealAnimate, RevealMarkdown, RevealHighlight, RevealNotes,RevealMath.KaTeX]
 			});
 		</script>
 	</body>
