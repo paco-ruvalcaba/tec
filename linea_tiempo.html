@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Sistemas Integrados de Manufactura</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<!-- <link rel="stylesheet" href="dist/theme/white.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/league.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/beige.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/night.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/serif.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/simply.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/solarized.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/moon.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/dracula.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/sky.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/blood.css"> -->
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+    <!-- <link rel="stylesheet" href="mystyle.css"> -->
+	</head>
+	<body>
+
+	<script src="plugin/math/math.js"></script>
+
+		<div class="reveal">
+			<div class="slides">
+
+<!-- ...................................................................................  -->
+<!-- .........................Inicio de la presentación.................................  -->
+<!-- ...................................................................................  -->
+<section>
+	<!-- <a href="https://revealjs.com"> -->
+	<img src="logotec.png" width="10% alt="Logo Tec Lerdo" style="background: transparent;" class="demo-logo">
+	<!-- </a> -->
+	<h4>Tema</h4>
+	<h2>Hitos del desarrollo del control numérico</h2>
+	<p>
+	<small>Maestro: <a href="https://franciscoruvalcaba.carrd.co/">Francisco Ruvalcaba Grandos</a>
+	</small>
+	</p>
+</section>
+
+  <!-- <section data-auto-animate data-auto-animate-unmatched="fade"> -->
+    <!-- <h3 class="r-fit-text">Introducción</h3> -->
+  <!-- </section> -->
+	
+				<section data-markdown
+				data-separator="^---"
+				data-separator-vertical="^\n"
+				data-separator-notes="^Note:">
+				<textarea data-template>
+[![](https://kroki.io/mermaid/svg/eNqFWMmOHDcSvesrCAGGJKC7oH27aaw2IEMyBNgDn6MyWVXsYZIpLgVV_00fddDB0G0wt_yxeREks7K62zOGAFdnconlxYsXeX5-fq_zbmO2b-8pZf32o95r-1Y96PU6bx_gWdrpQeOB0zkFsg_unWNLMoO2xul7-JWsVp8pJK2e3Hvy-vFr9VY9_O2R-tVHPe7Up5X6lbovmUKvcjLWXJFKFC51oqgGnaZrazr8HHXY-EA9_6RASlsFu1LwVlFOfpiuk-m86rVK2lLQvLmbrh0exjNl3F67RK73iuL0nXePATYGrOqNbCM7UKcdDQYr5UlPyUdsTTp0NKwNreGJXF5vpqCyI4W7v2TjaAX3Xj6r7sGvX3wOTlP-ik2Jr1eW1GjIYaf6krWKWu1wpxqy6w3uxxqtNjT4KFewlc4P66DZmvufy877K3WBVxFL5awzsSEZmNWzeSN2sTtj8F_NgICVY589Vt0gL1y38-IBHNUtrp3xTseb3uGomAfjTMQD2WxgTOcHDp7pcTe7QVik9vpKUcfHSG4QfMK2gXdZpKSz1HtYzmYP07fkkQn9FZebQSLjst4j2L2OFHC35aThvoHX8R0bxLcGqEVt9NFwRk7MTZ4jgvhy2lw0PfViASXiYw78CgD2XX2jgFkXR8_w5HVy9xxIMdiroEcAqmVQsNSZ6Yfjddn9fwitKRL762p6Dkv0YtUmuxp_gAUlwPAFmN48ewow_Y5TTNTTX9MP2UbWrFEHnt2dvnUpMOwlb3BYV0TqS7yH0Z2JYugBPvS5MyVGRg-jmGfguu6KL7AOvrx68ZNADxbgDZygli4Yx5VgfDOOkX6BiGGZ2aBGezmyM9vpP7CWrJaiHUwyxfIbCwsE7GJDNSF6zoCJnN9k9kgnnjPmiGHKprKBQIjaE8yJy7URnnrc2vBcq8zpTkdznmhNTtwoHjwvHqBSDuxrkLyjHgzbrrkSaKQryewwWrE9AAHghOG8BlduiVl2dUacZtgaoMhN36IZBNRqzHaLUjxj5AIc8JztZwj44PALFBLVZrruTD2hZQblFMTWF7D1IyrN6MCGGQbjXK3lEPgBIPMeBJxxWeuM8X7FoOv4zTDjpQPqS9WAZxF-_Es00PSXx2KQwkBy88sSJRRKashO07dQzkHQjAOySmIYZJcC9C3KSgqjl5oBGaS54gr8gkZyAr8XY2B8ASjjdw6oBkkU0Kk-M-s7eT8afUW1etd06cXOV7fxeKMzrIPvdnQ7X5c4ZLG2MibigiJAvprXiFeQmsBfzMn8tHEmo-LO48W01vPewwehsIxijQZ3e8ZdgT7u-_Thj5V6-MFFdE2Yo_7QHSh_-rGtDnyiGKnb5ahTio_O1M-WMh5frNTvO3LOS2l0Nh-0IJ-rC_2zy9YX5hOyGyonhOl6NH3BZ-EpTgnwVWzJUa50PtWqW4OCgyGchDO3GiSk1t5bTQ64PsiFtvXLkMfERIGDELGA7dyHF0Tq2Jzp33hMKNiGHnBbbLjOpehRYE64GTFxklPufTgLHQHRVe916YXcKc641uX4wAxBwrylnvgPPi4npk6WFr7XwZFoA4nYsijBy9jmMiqI6fWYRFTgBh7IGeofQO9Wc-84Lb2BDsDrXodILGgY9hKco1JYHLLzwVzhSuK2QJmhhyNudqmgBz-3HKlWMelNMQlBdVHq4RixikvSCAXtmaQWfUReSYWHUksFBECnlXbvj5tHS8wtCTCw50PNxdGE54-LCTpCTBlbfILrXEb2NCzCM307m1t4ECZftKk1mr_m67hVznbxSnAOWENEBN_6pDnOGg7_h5ENN7ZxyRyvsh_FWJvwjunypHveIM7WmoWVi3lFx8An7qsnfCWnRyX9cq74508rXXuLDOaizSgN04-40eWvLfcRNGyWfFl0hGggPhjNyh-lEFstV8phUKy0BfIRx-hZGsJfRrl0maPfYkTt0AvJ0CTc_0gM_5xRwflpcG5wPCwzxqVVFFpTB5U8OURFoIkpz6uSaU7Va33tugvSLtF5-Rj_qTAON6Idsu4LKpY8P3IvgYSI6iHeRGm3gmgzXQOqyL6HX44Z6ZH4dPQmZukzbHOjnSOWlW4vxYkXNZ4NHmC-LL82hWzrSAFiB1hrPZalO9ODbjNGGX9TtZ1KwcYQcdmPCqRe1iYCC94HTE1-59SfK_SE3O3soYhKebFSn4M-Bx6Duuj-BYQdRXzh3VY2C0JcEjUsN1uDAoeQtsQjhLp_8duHdz_fP2ONcHEJVuxMEbjMmNDIxH3kn47byV2UbBrlHxnZVqC35rpsFHNHmv3-eGpstU-JVRL9v_GKBTpqacvKmKy8sqCu1uAXLpemh94_Sq-0ekth-g4OVHTIXHa6aE5YDUwPlTGFUAslvToFxw3p0fOcU0rmBtsQ46hyQh3GwhkjGGg_tNotur2KM1HZmK77UJr32nouQBmXUE9izetiTe0zJ9awZqsT9nGqbrP3ejF93xy5j4PWXVqpM-ddGZ2WM_Gx04lZtWEt545sActYs_B3EtYJH6aQO1b5levWQobMOmXY8Itp3rtKE9EzKmXKAmNkntyIRSU66jwbk03VvPMnb148nT9QoMA-U8AJMlakEm5RaXxsiQcV7PPlwOAvkLRQpu9QIZruro8SyyO7B3Wfh57KGYWCZxLYsdqXCqEyazd1AkAxAVYHbCHb7kjJ2JojTyFRYkJ1VSTWI7eSVJVDblLvUAj3qqM75TYv5kaV9ZpKX2zKuE6yxwnYNs_4swXL3E3Daots6WJCGCxeNYQjc8YIomeSZ-qS4usyMZGP2SVpt5JJbrfqyQqYijUCMpChaiB6BbnE_QlR3s7QhBNl3AMQ4nFolwn4Duyv1FM-_xgsq_XtAmBqu3Pzs1vGWT19l5oqkJnPjRKAvWFJ4NqkUxMmn2tcFqHN64p_rohtV23YszrRVYFLJcD9Xq7lQJ18UFmtVuo5TPMsDMPeC3PoWf1SIbvB701J5c1A8lt9ydFndC_KPTdWpFuTHceo6go2ESOilVz1JF-PRG0Vhr6kMrqXGZFpWL679BkUYKqoRTvl8K_UO7vNrhQ7UHS8Y_Q9dnI9xC6YtQklwGU0XUiYynys_4O2kOz7Gs_R88xSRiPmmUqgCOTIglLLiJsP8HczfZ8n9w2tg3woAK3n-s2Ke2Lsm0YAcEfDnzViWigirwx_ZOhqU4Cl-mv9MJOCPh1eDnObmWcU5q8Xj5sslso8bemi77mOi9qcV5UxkGZZR-VzlXRERD3o1L52sfAEH9fTjsRw1-cZkVFpugYNh9V_AfNnSds)](https://kroki.io/mermaid/svg/eNqFWMmOHDcSvesrCAGGJKC7oH27aaw2IEMyBNgDn6MyWVXsYZIpLgVV_00fddDB0G0wt_yxeREks7K62zOGAFdnconlxYsXeX5-fq_zbmO2b-8pZf32o95r-1Y96PU6bx_gWdrpQeOB0zkFsg_unWNLMoO2xul7-JWsVp8pJK2e3Hvy-vFr9VY9_O2R-tVHPe7Up5X6lbovmUKvcjLWXJFKFC51oqgGnaZrazr8HHXY-EA9_6RASlsFu1LwVlFOfpiuk-m86rVK2lLQvLmbrh0exjNl3F67RK73iuL0nXePATYGrOqNbCM7UKcdDQYr5UlPyUdsTTp0NKwNreGJXF5vpqCyI4W7v2TjaAX3Xj6r7sGvX3wOTlP-ik2Jr1eW1GjIYaf6krWKWu1wpxqy6w3uxxqtNjT4KFewlc4P66DZmvufy877K3WBVxFL5awzsSEZmNWzeSN2sTtj8F_NgICVY589Vt0gL1y38-IBHNUtrp3xTseb3uGomAfjTMQD2WxgTOcHDp7pcTe7QVik9vpKUcfHSG4QfMK2gXdZpKSz1HtYzmYP07fkkQn9FZebQSLjst4j2L2OFHC35aThvoHX8R0bxLcGqEVt9NFwRk7MTZ4jgvhy2lw0PfViASXiYw78CgD2XX2jgFkXR8_w5HVy9xxIMdiroEcAqmVQsNSZ6Yfjddn9fwitKRL762p6Dkv0YtUmuxp_gAUlwPAFmN48ewow_Y5TTNTTX9MP2UbWrFEHnt2dvnUpMOwlb3BYV0TqS7yH0Z2JYugBPvS5MyVGRg-jmGfguu6KL7AOvrx68ZNADxbgDZygli4Yx5VgfDOOkX6BiGGZ2aBGezmyM9vpP7CWrJaiHUwyxfIbCwsE7GJDNSF6zoCJnN9k9kgnnjPmiGHKprKBQIjaE8yJy7URnnrc2vBcq8zpTkdznmhNTtwoHjwvHqBSDuxrkLyjHgzbrrkSaKQryewwWrE9AAHghOG8BlduiVl2dUacZtgaoMhN36IZBNRqzHaLUjxj5AIc8JztZwj44PALFBLVZrruTD2hZQblFMTWF7D1IyrN6MCGGQbjXK3lEPgBIPMeBJxxWeuM8X7FoOv4zTDjpQPqS9WAZxF-_Es00PSXx2KQwkBy88sSJRRKashO07dQzkHQjAOySmIYZJcC9C3KSgqjl5oBGaS54gr8gkZyAr8XY2B8ASjjdw6oBkkU0Kk-M-s7eT8afUW1etd06cXOV7fxeKMzrIPvdnQ7X5c4ZLG2MibigiJAvprXiFeQmsBfzMn8tHEmo-LO48W01vPewwehsIxijQZ3e8ZdgT7u-_Thj5V6-MFFdE2Yo_7QHSh_-rGtDnyiGKnb5ahTio_O1M-WMh5frNTvO3LOS2l0Nh-0IJ-rC_2zy9YX5hOyGyonhOl6NH3BZ-EpTgnwVWzJUa50PtWqW4OCgyGchDO3GiSk1t5bTQ64PsiFtvXLkMfERIGDELGA7dyHF0Tq2Jzp33hMKNiGHnBbbLjOpehRYE64GTFxklPufTgLHQHRVe916YXcKc641uX4wAxBwrylnvgPPi4npk6WFr7XwZFoA4nYsijBy9jmMiqI6fWYRFTgBh7IGeofQO9Wc-84Lb2BDsDrXodILGgY9hKco1JYHLLzwVzhSuK2QJmhhyNudqmgBz-3HKlWMelNMQlBdVHq4RixikvSCAXtmaQWfUReSYWHUksFBECnlXbvj5tHS8wtCTCw50PNxdGE54-LCTpCTBlbfILrXEb2NCzCM307m1t4ECZftKk1mr_m67hVznbxSnAOWENEBN_6pDnOGg7_h5ENN7ZxyRyvsh_FWJvwjunypHveIM7WmoWVi3lFx8An7qsnfCWnRyX9cq74508rXXuLDOaizSgN04-40eWvLfcRNGyWfFl0hGggPhjNyh-lEFstV8phUKy0BfIRx-hZGsJfRrl0maPfYkTt0AvJ0CTc_0gM_5xRwflpcG5wPCwzxqVVFFpTB5U8OURFoIkpz6uSaU7Va33tugvSLtF5-Rj_qTAON6Idsu4LKpY8P3IvgYSI6iHeRGm3gmgzXQOqyL6HX44Z6ZH4dPQmZukzbHOjnSOWlW4vxYkXNZ4NHmC-LL82hWzrSAFiB1hrPZalO9ODbjNGGX9TtZ1KwcYQcdmPCqRe1iYCC94HTE1-59SfK_SE3O3soYhKebFSn4M-Bx6Duuj-BYQdRXzh3VY2C0JcEjUsN1uDAoeQtsQjhLp_8duHdz_fP2ONcHEJVuxMEbjMmNDIxH3kn47byV2UbBrlHxnZVqC35rpsFHNHmv3-eGpstU-JVRL9v_GKBTpqacvKmKy8sqCu1uAXLpemh94_Sq-0ekth-g4OVHTIXHa6aE5YDUwPlTGFUAslvToFxw3p0fOcU0rmBtsQ46hyQh3GwhkjGGg_tNotur2KM1HZmK77UJr32nouQBmXUE9izetiTe0zJ9awZqsT9nGqbrP3ejF93xy5j4PWXVqpM-ddGZ2WM_Gx04lZtWEt545sActYs_B3EtYJH6aQO1b5levWQobMOmXY8Itp3rtKE9EzKmXKAmNkntyIRSU66jwbk03VvPMnb148nT9QoMA-U8AJMlakEm5RaXxsiQcV7PPlwOAvkLRQpu9QIZruro8SyyO7B3Wfh57KGYWCZxLYsdqXCqEyazd1AkAxAVYHbCHb7kjJ2JojTyFRYkJ1VSTWI7eSVJVDblLvUAj3qqM75TYv5kaV9ZpKX2zKuE6yxwnYNs_4swXL3E3Daots6WJCGCxeNYQjc8YIomeSZ-qS4usyMZGP2SVpt5JJbrfqyQqYijUCMpChaiB6BbnE_QlR3s7QhBNl3AMQ4nFolwn4Duyv1FM-_xgsq_XtAmBqu3Pzs1vGWT19l5oqkJnPjRKAvWFJ4NqkUxMmn2tcFqHN64p_rohtV23YszrRVYFLJcD9Xq7lQJ18UFmtVuo5TPMsDMPeC3PoWf1SIbvB701J5c1A8lt9ydFndC_KPTdWpFuTHceo6go2ESOilVz1JF-PRG0Vhr6kMrqXGZFpWL679BkUYKqoRTvl8K_UO7vNrhQ7UHS8Y_Q9dnI9xC6YtQklwGU0XUiYynys_4O2kOz7Gs_R88xSRiPmmUqgCOTIglLLiJsP8HczfZ8n9w2tg3woAK3n-s2Ke2Lsm0YAcEfDnzViWigirwx_ZOhqU4Cl-mv9MJOCPh1eDnObmWcU5q8Xj5sslso8bemi77mOi9qcV5UxkGZZR-VzlXRERD3o1L52sfAEH9fTjsRw1-cZkVFpugYNh9V_AfNnSds)
+
+[![](https://kroki.io/mermaid/svg/eNq9WMtuFEkW3fsrQr3BlqrcNjQ2sAPDzCB1M0jQ0mwjM6PK4YmMqI7ItFysZj9fwZIFixE7tvUn_SV9zo3IRxWmZ1YjtWhXPm7cx7nnnpvL5fKoDn5l18-OlHJh_bO5Ne6ZetCYql8_wLXu2rQGF7zpu6jdg6MlXulsa5z15gh_dc6otzp2Rj08On_6-Fw9U6-cavVvvfW6CQrmlcGF3acu4Oc_VGPw29RdbWJIdvfFq1VvVO9Vaxob8m3b4uWIK512vOK02ljzQfNvuFHpm6A2IU6v9F6r-tqmjTyiXcf_-2Qb3agtL9Uh8lofdc0zT-nrw-wrPOxicMr3cDLaGqajScZ3uy90K9nUmVYrvXG2ZkRaTmt3HyVEtcLDuBxhPfjsa4srONaFpNpwa5ethTX8yHevTYxaLunBM6N-602DuPzgDSwmCVEis3x2Y-IKxzR6dP74zYn6GTci6hFnLn1zwkGAC7F6ZT0Me91Z9bdtE0NnJBfquk_WuaBuTewQsVsoGIJ5w0rhleCz7cAreOeX1-9PmcchUbMTTep2H_krdbG3BQ1dXyE2wUBEKeBPOlVvTWxtZwQqSFk5INm2dzDhDdMOn5yO65BRYGDjBv8cIzkmbpAyqawiMIGaLtoGaQEG4K87QTmiqW1lVOpRCM1yED0aL9-XY_G03n1pLM6riEYbJO-PMmg2MWwRQFCd9f9EosJ2gPGUhqQjksBSqo1mfbTvV7ruAMIIf-CbbitEpHTfBRSP2YbHkgXTjpCpbax7232TM3rzU_YmF5z1lnaxPtGlpEIUEFTo0TmmEZ3TycwepbemvpYneaSOVR-L2_fhdUHAAp_N7rNWt8F1RkcY3Kq-s85-kB9ELwKEG4JmYCQRM9LccAOd4E1tco82gj3cT4Fp6owfICA9k-ZOpNGLMQVshPcRd3SDDog2Su81BiW_HvtuoztJbiOElQDKhXphfGPvBoRuBX-5ne6D88QQx1c4sWFWQ9PXGXjWNz2sWO1O1RXeQJRf9ZAQDxBk4A_8F4M3uYiPcxGHA3GK4SGxEUhNHg1u1KHdOFBjxsoEngFmhQYQHhg9Cvz2uXLqzxmgULzcA61ee7A1wCjeXYyAR7HEwKZ37GUG4mEfYfAuziA3ZNJEnpbC9yV8eTxt-t2nJLUGn3QDi3TIaUsH5sTvWHT2bAVWTMXtfJy-IdAaHYFVNCsyluy6h60mCFRwDjp9Bf_pD5xDKgEEAEfiuczxoPUFaLOySbr32xZ5A3L-ajz41eE1psvWKO9pzjVCoWk5rWEKp8EHl1sgjobhAyYPau-DWgHIQDmDwy9MuN1HlynwL_2AJ2Y3BdzLQbFhc6ClNYPnUawjspjTG-U8mZc6zz9gCWymyTZ4mO0_Dr7LaXbg0Ii5-hw1MGL_1atT9euvpyQGGNOS0TJg0jTr0p-0BaYCORZvOzRgTvqTMmo5SUpqhjxZXmr6m7A_Vsc5qKUKxHzf5TlLapbg28oOoe_xwzRD87sC61pv9AehAmduSbq4UoUhpAX91U2UP1tdX_fG5YrWALBvWD0ZNJ487MXXLEk6DG3CUhLSBvEMjc6Tzp-wV9aIYcoC8_7ODFHX8_52wHdPdGdigdG2zDTMwWr3hfpjoZ6_fc-JzCDNndxlPpzeS9HrF7-oy7Of5NSnOffftw6L6njO8sNt5P5wNJ0MY25uDicveXQ2x8DPLtEfTldEykQB0k4hTfYDp3hupFRHW4G4h3tpzpx5XpPCIUmk3hunfSZT69eYFiZiEjHci7NDBYpnIGpDLYMGciJq6Q9oE1CLArvwoSxlUAgInA14kuNNT--ZaegocwfxweQU_nWE3PHDx2dnRMSPYDDhgS2DO1mwMvNW_FYDZqEIMKJhckir3JTRwItolyIFs4CQmOIMfTNB3NiEs3vkwZ8SYsMoBjoO4jh_crbnbMr5NPc9--hi9uyYYGEPuFVm1nfoIOc2qd__9W_8hxR3pvYBQ4mqIXvuaUFgAM7ANoEZ7EXqjV1MnXfHY5DsJHUpgVEtR-M4UrZ5top7ZQOJoQrdnNw10FckPTK1we7R2dthICZ4pYDWD2EubDAgLBoYCZdkQ0_t80yyy2HwsCJQUL0BfiS2wIqXAZQZb7YJLA7pbUJ9bqehkSUiSn2R-ZPW4JLDBerPaHJOrKO4yDiveyrkAF4Sfi-gXKFfZWrmE1w-YsGR2GSegoQQTmR5Cjr3dps0jLw8MyhBrnXqdO4tus95T6nvhWhlP5jtPDodRiEJePRfGewlOexQhAzPiD2sORS3ZR0dTQmbzpgmgWaxa-DVOzv1OHc624lOzQNx4DZm6Tagd4mSLK_EYt4GgDOz-8-o__sUMnGP0cESs4hnSocPmYh7-CF6ylyUfBTV__L51fJ8UU6B071sAMPQm52y-HY32UOKQF4WMKKev9BUqJozW-6VhWtTqCKe0xvEjDPQeZ_rXnQ1nlmLRIpofnNLNNgKwAOHJ8kqFZ-pZaDmVtm4Hm7gn91nX4TmRZHB77b08UfwzoE04JDdc7vV1q-490yzHUSy4RYemeiKayykLKZnBmgy694Td0J5yPWtxTwBWHJXZDRCWJZ-GMkjh-hGocklYvepLqu4OE5CpMChJgl7mvxQnJQy8cAszpui4YHQDwXP2Z_EBTPKEReZAiK_EojwTtwRXHl91LLlSwjYLOsdXBCiIz3k8mWJyKrywUN7ymKQR7P2fMH40XDmqxAxImjJrHdf87zEumz3vtAsRLSj0Ykklt1i9oVcmkknF-4YGqPG-GZqCsuKgFDX0h-af3KsdYXeL7_70eaA_g7Z4J597vAVIh-_ue5XelB5kszei3pg75dvICY3PwKxiC8ZBpKrgQTyx0jUIj_Rg8bd9yVmy9TdIhmrGfXO5sG2ZEWCf_K94Bsb5WvE1MWwWiikmBR2HlbD8kKht0zwBxJy7K4FUueFvMZgRmfKFjGf6zL0JXvThwsqZwE7hNLV6xMMhVo-eR3M-WQ0V8ePKTN23cmatLL8LIEFSRT08v-rni-e7qVc1o3BOufJ0El7mWMEA7Ev5gqDmNx9QUOGvQ8oE-vnaQmCnyo1G04TKmpsa03eRBDR6Oi9i-q40ZLonLp68UYde9vFPm9iVaCM2H2tgKMTfhlUMtqojQ6ULnfYxf-095JkUM9x183b73a0nESgbgq5z1ZdXeT0TDGnYXuVnkNwh75fmzu95kc-ddPze8K4Ho678ZifDNfZQlu23GnOvnxzxaROW3DtRJIi4B_-3vI7iZTqBz77DsMkUcM20sVpf7IDRKd_AEsml2Y)](https://kroki.io/mermaid/svg/eNq9WMtuFEkW3fsrQr3BlqrcNjQ2sAPDzCB1M0jQ0mwjM6PK4YmMqI7ItFysZj9fwZIFixE7tvUn_SV9zo3IRxWmZ1YjtWhXPm7cx7nnnpvL5fKoDn5l18-OlHJh_bO5Ne6ZetCYql8_wLXu2rQGF7zpu6jdg6MlXulsa5z15gh_dc6otzp2Rj08On_6-Fw9U6-cavVvvfW6CQrmlcGF3acu4Oc_VGPw29RdbWJIdvfFq1VvVO9Vaxob8m3b4uWIK512vOK02ljzQfNvuFHpm6A2IU6v9F6r-tqmjTyiXcf_-2Qb3agtL9Uh8lofdc0zT-nrw-wrPOxicMr3cDLaGqajScZ3uy90K9nUmVYrvXG2ZkRaTmt3HyVEtcLDuBxhPfjsa4srONaFpNpwa5ethTX8yHevTYxaLunBM6N-602DuPzgDSwmCVEis3x2Y-IKxzR6dP74zYn6GTci6hFnLn1zwkGAC7F6ZT0Me91Z9bdtE0NnJBfquk_WuaBuTewQsVsoGIJ5w0rhleCz7cAreOeX1-9PmcchUbMTTep2H_krdbG3BQ1dXyE2wUBEKeBPOlVvTWxtZwQqSFk5INm2dzDhDdMOn5yO65BRYGDjBv8cIzkmbpAyqawiMIGaLtoGaQEG4K87QTmiqW1lVOpRCM1yED0aL9-XY_G03n1pLM6riEYbJO-PMmg2MWwRQFCd9f9EosJ2gPGUhqQjksBSqo1mfbTvV7ruAMIIf-CbbitEpHTfBRSP2YbHkgXTjpCpbax7232TM3rzU_YmF5z1lnaxPtGlpEIUEFTo0TmmEZ3TycwepbemvpYneaSOVR-L2_fhdUHAAp_N7rNWt8F1RkcY3Kq-s85-kB9ELwKEG4JmYCQRM9LccAOd4E1tco82gj3cT4Fp6owfICA9k-ZOpNGLMQVshPcRd3SDDog2Su81BiW_HvtuoztJbiOElQDKhXphfGPvBoRuBX-5ne6D88QQx1c4sWFWQ9PXGXjWNz2sWO1O1RXeQJRf9ZAQDxBk4A_8F4M3uYiPcxGHA3GK4SGxEUhNHg1u1KHdOFBjxsoEngFmhQYQHhg9Cvz2uXLqzxmgULzcA61ee7A1wCjeXYyAR7HEwKZ37GUG4mEfYfAuziA3ZNJEnpbC9yV8eTxt-t2nJLUGn3QDi3TIaUsH5sTvWHT2bAVWTMXtfJy-IdAaHYFVNCsyluy6h60mCFRwDjp9Bf_pD5xDKgEEAEfiuczxoPUFaLOySbr32xZ5A3L-ajz41eE1psvWKO9pzjVCoWk5rWEKp8EHl1sgjobhAyYPau-DWgHIQDmDwy9MuN1HlynwL_2AJ2Y3BdzLQbFhc6ClNYPnUawjspjTG-U8mZc6zz9gCWymyTZ4mO0_Dr7LaXbg0Ii5-hw1MGL_1atT9euvpyQGGNOS0TJg0jTr0p-0BaYCORZvOzRgTvqTMmo5SUpqhjxZXmr6m7A_Vsc5qKUKxHzf5TlLapbg28oOoe_xwzRD87sC61pv9AehAmduSbq4UoUhpAX91U2UP1tdX_fG5YrWALBvWD0ZNJ487MXXLEk6DG3CUhLSBvEMjc6Tzp-wV9aIYcoC8_7ODFHX8_52wHdPdGdigdG2zDTMwWr3hfpjoZ6_fc-JzCDNndxlPpzeS9HrF7-oy7Of5NSnOffftw6L6njO8sNt5P5wNJ0MY25uDicveXQ2x8DPLtEfTldEykQB0k4hTfYDp3hupFRHW4G4h3tpzpx5XpPCIUmk3hunfSZT69eYFiZiEjHci7NDBYpnIGpDLYMGciJq6Q9oE1CLArvwoSxlUAgInA14kuNNT--ZaegocwfxweQU_nWE3PHDx2dnRMSPYDDhgS2DO1mwMvNW_FYDZqEIMKJhckir3JTRwItolyIFs4CQmOIMfTNB3NiEs3vkwZ8SYsMoBjoO4jh_crbnbMr5NPc9--hi9uyYYGEPuFVm1nfoIOc2qd__9W_8hxR3pvYBQ4mqIXvuaUFgAM7ANoEZ7EXqjV1MnXfHY5DsJHUpgVEtR-M4UrZ5top7ZQOJoQrdnNw10FckPTK1we7R2dthICZ4pYDWD2EubDAgLBoYCZdkQ0_t80yyy2HwsCJQUL0BfiS2wIqXAZQZb7YJLA7pbUJ9bqehkSUiSn2R-ZPW4JLDBerPaHJOrKO4yDiveyrkAF4Sfi-gXKFfZWrmE1w-YsGR2GSegoQQTmR5Cjr3dps0jLw8MyhBrnXqdO4tus95T6nvhWhlP5jtPDodRiEJePRfGewlOexQhAzPiD2sORS3ZR0dTQmbzpgmgWaxa-DVOzv1OHc624lOzQNx4DZm6Tagd4mSLK_EYt4GgDOz-8-o__sUMnGP0cESs4hnSocPmYh7-CF6ylyUfBTV__L51fJ8UU6B071sAMPQm52y-HY32UOKQF4WMKKev9BUqJozW-6VhWtTqCKe0xvEjDPQeZ_rXnQ1nlmLRIpofnNLNNgKwAOHJ8kqFZ-pZaDmVtm4Hm7gn91nX4TmRZHB77b08UfwzoE04JDdc7vV1q-490yzHUSy4RYemeiKayykLKZnBmgy694Td0J5yPWtxTwBWHJXZDRCWJZ-GMkjh-hGocklYvepLqu4OE5CpMChJgl7mvxQnJQy8cAszpui4YHQDwXP2Z_EBTPKEReZAiK_EojwTtwRXHl91LLlSwjYLOsdXBCiIz3k8mWJyKrywUN7ymKQR7P2fMH40XDmqxAxImjJrHdf87zEumz3vtAsRLSj0Ykklt1i9oVcmkknF-4YGqPG-GZqCsuKgFDX0h-af3KsdYXeL7_70eaA_g7Z4J597vAVIh-_ue5XelB5kszei3pg75dvICY3PwKxiC8ZBpKrgQTyx0jUIj_Rg8bd9yVmy9TdIhmrGfXO5sG2ZEWCf_K94Bsb5WvE1MWwWiikmBR2HlbD8kKht0zwBxJy7K4FUueFvMZgRmfKFjGf6zL0JXvThwsqZwE7hNLV6xMMhVo-eR3M-WQ0V8ePKTN23cmatLL8LIEFSRT08v-rni-e7qVc1o3BOufJ0El7mWMEA7Ev5gqDmNx9QUOGvQ8oE-vnaQmCnyo1G04TKmpsa03eRBDR6Oi9i-q40ZLonLp68UYde9vFPm9iVaCM2H2tgKMTfhlUMtqojQ6ULnfYxf-095JkUM9x183b73a0nESgbgq5z1ZdXeT0TDGnYXuVnkNwh75fmzu95kc-ddPze8K4Ho678ZifDNfZQlu23GnOvnxzxaROW3DtRJIi4B_-3vI7iZTqBz77DsMkUcM20sVpf7IDRKd_AEsml2Y)
+
+[![](https://kroki.io/mermaid/svg/eNqFV01v3DYQvftXEAGK2MCu43x_3FInTQPEbpH00iNXGm1oUKTCj0XX_8bHHHIofOtVf6xvhpSsbAr0tFyRHM28efNmtF6vjxrvOrN9daSU9dsPtCP7St1vaZO39_Esfaae8MBRTkHb-0drXEmmJ2scHWGVLKnfdUikHh89fPn8TL1SH3xUxkUKCQtyamO1a7xqScU8UNCboKPZeTV4a5pgYtIwhr86aPWZQtC9IZc0X2g8W4aLEcdgCo-y06rRg2y3Rvfa4YRYP__5Uh07k0IO8n_j8duM_2xM409Ug0BgtfVKwwZciQgoycFGhw3unKpPMJ-MNdd6o11xiD3QQfU6UTDaUlQtjsaVmsLAEs538NtHxLvnfz2l8QbB4f_x5OPJCnsLM_ONY_h9cjqB99YqibXX6t3bi_eX79UQ_OBDY7wbb8Xzus1weDch4vshc3RwWVDemcjr_Q-7AhtiN5vcmPHWMbopeCsh7zS8i6ofb75k47Skz2q47XKnm5RDsWWppIdtD4au9al6C6dm17pMiiw8pyYH-MFnYaYbbzbBNFrpnDzekbCeAz--PGH8W4oawFgch4VG9xvjF-clX4O249coNx8y3-AnM6IxrW45QZSoSYg1gheRXJQlIgl-41NUQKc362QoeKe-ZA6jbKl70Th-ru8pv7ki5i-gRzpb40u81Z7SA9JbyAQmYa_1sTD8igqsZQtwFarG3Mhz8fqReM34uKjVr7nvjdtuTGgFOUG1bOHiszOVvCOrWwSxAI7zplCt_i5s9VmjmNTDZ2dnauvteqDqv3G4V7mQdLGLopOCKN7iwRPcQjIf4PTsJCeFy3kIOAy6ThmOpTiFOMrlfvwaODfH55fnJ-IYjJgF61gQEm2DBLGXHAbfVkg4NT17BcblLTgmnHOZdlptySEds4-Dhwok-j8_yptRadecIvFqJZmWlOzoWkVfJMCkbDh1fd6rMN4MwJJRIcFtfgkM1KgaFGPwDUiKsASmxyWXqDdxEkQabyU_8HtZrqImlYFCumTWRWlKiY43vS7lmcjSZG6vCJU4-AoZv1jUUR4YUIEBisW48DqZIOZRPJXTu0JoWNqZxOfqNvTr2jNPBuKnPnGapJqlWAAUyteHYITlyAioptnjKRuRkE7B4ElVfWjdFioVk0hfoN6nUhZ3glKdlNqDE8sbNcaNnRJ7d4sTAJ-kMtBNRH3if0hfkSvfmcbwDoBC08JZqzot0sOp5XKWhZUior8mdkFsWEqWtN2N3yT2QK3kpcPRSbWelMxDbJxH7-STMLINGek6fvfHiUJiDgnQWDSNNfxDT6lYR78J4gteTkUqmN89-lDKXNh7blC6WYPQ4zdGCpc6rGSB850PfcnqkKlF9Wj2QYdI5Z3I5FLABUdQOfa-UsqLfHPbumIQra7VmcyOtUVSsTCA4cBMbVSuqBx9kfhF61gvW_kecqM6m6-8Ik6OlFi9UWEAkEHvoOs_WBKwnxawl37MkiLFuqTB8fn7i0P4uV6cQFX5K73THia8GnUQXdYq3u-y4-5bJHbhwIpveubmSlhJC50quMYfNmpHjDwMnL9-8-D89YUoy3ShmOwQtgMoK7izYwCDkTljvO2lHPZ8jDAT3NXj6XJyQPhzW-dAPJdagZ_bvy5VyftTF6ceHSfqJdQyRgRmVHU8ma70PJj_5bePF1XhUBzTIYrwynDBqfH2LyaJNJrM3cBDIjF1VBMCfdhqnqZKAKtF629rtWib9LJTnKqPhLXUpGAVq77UF7PlQu9HT3-SWJ7VTrvIgvRQnbg36GWukI-L9XskNWvX8uCAmEFACos5Z1X1i4oifj9XJd5yKGzs3Os0FzB0Vw5ycdpqg02gi1FDK6EDj8QyLcFHv0IPbyr_fStoVe7xhSjjGXPHZtoCRRPMlu4KdqbZ_C4SlcWEbSnMgExd_aCdEUv2ztvMbyxNeKlt4PmpWivYeMGDmuExUCYI9103rkJbXOks1BWCXmr4eekSd6frHGrq8KRbJgrP5XeFJGo_tQ244ab2tajr7wr4DVrFNJqWVoGZSubWUg8tD0IIGkXe8x_WjsM2Ip2rSqpvOXjjGssqh-GeIn8QTM2wnZoOC-r0Son2hToId0G8ylqMeD3Qmd3hdZT5nMa_NbfIUgZZcA6HiZ4bGeCoErwTqZgn3TnMOiLUN4qpWXk5clBM5qraZLNj4ZcwXh6GcdANphSrPy8-rZ-eocpdk60434-3bbaHEwC38ojvI9fqINqHckXEg4-YC3a-2qeiVdXF_eIrSEzn-bsF-pakxx9U48yQOYofvjCcqMg829IVVLC6W9tAwbkK9em_AumQ1w)](https://kroki.io/mermaid/svg/eNqFV01v3DYQvftXEAGK2MCu43x_3FInTQPEbpH00iNXGm1oUKTCj0XX_8bHHHIofOtVf6xvhpSsbAr0tFyRHM28efNmtF6vjxrvOrN9daSU9dsPtCP7St1vaZO39_Esfaae8MBRTkHb-0drXEmmJ2scHWGVLKnfdUikHh89fPn8TL1SH3xUxkUKCQtyamO1a7xqScU8UNCboKPZeTV4a5pgYtIwhr86aPWZQtC9IZc0X2g8W4aLEcdgCo-y06rRg2y3Rvfa4YRYP__5Uh07k0IO8n_j8duM_2xM409Ug0BgtfVKwwZciQgoycFGhw3unKpPMJ-MNdd6o11xiD3QQfU6UTDaUlQtjsaVmsLAEs538NtHxLvnfz2l8QbB4f_x5OPJCnsLM_ONY_h9cjqB99YqibXX6t3bi_eX79UQ_OBDY7wbb8Xzus1weDch4vshc3RwWVDemcjr_Q-7AhtiN5vcmPHWMbopeCsh7zS8i6ofb75k47Skz2q47XKnm5RDsWWppIdtD4au9al6C6dm17pMiiw8pyYH-MFnYaYbbzbBNFrpnDzekbCeAz--PGH8W4oawFgch4VG9xvjF-clX4O249coNx8y3-AnM6IxrW45QZSoSYg1gheRXJQlIgl-41NUQKc362QoeKe-ZA6jbKl70Th-ru8pv7ki5i-gRzpb40u81Z7SA9JbyAQmYa_1sTD8igqsZQtwFarG3Mhz8fqReM34uKjVr7nvjdtuTGgFOUG1bOHiszOVvCOrWwSxAI7zplCt_i5s9VmjmNTDZ2dnauvteqDqv3G4V7mQdLGLopOCKN7iwRPcQjIf4PTsJCeFy3kIOAy6ThmOpTiFOMrlfvwaODfH55fnJ-IYjJgF61gQEm2DBLGXHAbfVkg4NT17BcblLTgmnHOZdlptySEds4-Dhwok-j8_yptRadecIvFqJZmWlOzoWkVfJMCkbDh1fd6rMN4MwJJRIcFtfgkM1KgaFGPwDUiKsASmxyWXqDdxEkQabyU_8HtZrqImlYFCumTWRWlKiY43vS7lmcjSZG6vCJU4-AoZv1jUUR4YUIEBisW48DqZIOZRPJXTu0JoWNqZxOfqNvTr2jNPBuKnPnGapJqlWAAUyteHYITlyAioptnjKRuRkE7B4ElVfWjdFioVk0hfoN6nUhZ3glKdlNqDE8sbNcaNnRJ7d4sTAJ-kMtBNRH3if0hfkSvfmcbwDoBC08JZqzot0sOp5XKWhZUior8mdkFsWEqWtN2N3yT2QK3kpcPRSbWelMxDbJxH7-STMLINGek6fvfHiUJiDgnQWDSNNfxDT6lYR78J4gteTkUqmN89-lDKXNh7blC6WYPQ4zdGCpc6rGSB850PfcnqkKlF9Wj2QYdI5Z3I5FLABUdQOfa-UsqLfHPbumIQra7VmcyOtUVSsTCA4cBMbVSuqBx9kfhF61gvW_kecqM6m6-8Ik6OlFi9UWEAkEHvoOs_WBKwnxawl37MkiLFuqTB8fn7i0P4uV6cQFX5K73THia8GnUQXdYq3u-y4-5bJHbhwIpveubmSlhJC50quMYfNmpHjDwMnL9-8-D89YUoy3ShmOwQtgMoK7izYwCDkTljvO2lHPZ8jDAT3NXj6XJyQPhzW-dAPJdagZ_bvy5VyftTF6ceHSfqJdQyRgRmVHU8ma70PJj_5bePF1XhUBzTIYrwynDBqfH2LyaJNJrM3cBDIjF1VBMCfdhqnqZKAKtF629rtWib9LJTnKqPhLXUpGAVq77UF7PlQu9HT3-SWJ7VTrvIgvRQnbg36GWukI-L9XskNWvX8uCAmEFACos5Z1X1i4oifj9XJd5yKGzs3Os0FzB0Vw5ycdpqg02gi1FDK6EDj8QyLcFHv0IPbyr_fStoVe7xhSjjGXPHZtoCRRPMlu4KdqbZ_C4SlcWEbSnMgExd_aCdEUv2ztvMbyxNeKlt4PmpWivYeMGDmuExUCYI9103rkJbXOks1BWCXmr4eekSd6frHGrq8KRbJgrP5XeFJGo_tQ244ab2tajr7wr4DVrFNJqWVoGZSubWUg8tD0IIGkXe8x_WjsM2Ip2rSqpvOXjjGssqh-GeIn8QTM2wnZoOC-r0Son2hToId0G8ylqMeD3Qmd3hdZT5nMa_NbfIUgZZcA6HiZ4bGeCoErwTqZgn3TnMOiLUN4qpWXk5clBM5qraZLNj4ZcwXh6GcdANphSrPy8-rZ-eocpdk60434-3bbaHEwC38ojvI9fqINqHckXEg4-YC3a-2qeiVdXF_eIrSEzn-bsF-pakxx9U48yQOYofvjCcqMg829IVVLC6W9tAwbkK9em_AumQ1w)
+				</textarea>
+				</section>
+
+<section>
+  <section data-auto-animate data-auto-animate-unmatched="fade">
+    <h3 class="r-fit-text">MÁQUINAS-HERRAMIENTA ESTÁNDAR</h3>
+  </section>
+  <section  data-auto-animate data-auto-animate-unmatched="fade">
+    <h3>MÁQUINAS-HERRAMIENTA ESTÁNDAR</h3>
+      <div class="r-hstack" class="fragmemt fade-in-then-ou">
+        <p class="fragment">Taladro</p>
+        <img class="fragment" src="https://mahego.com/archivos/2022/07/DC-DP5M-1024x1024.png" width="30%">
+      </div>
+  </section>
+  <section  data-auto-animate data-auto-animate-unmatched="fade">
+    <h3>MÁQUINAS-HERRAMIENTA ESTÁNDAR</h3>
+      <div class="r-hstack" class="fragmemt fade-in-then-ou">
+        <p class="fragment">Torno</p>
+        <img class="fragment" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/HwacheonCentreLathe_460x1000.jpg/1024px-HwacheonCentreLathe_460x1000.jpg" width="40%">
+      </div>
+  </section>
+  <section  data-auto-animate data-auto-animate-unmatched="fade">
+    <h3>MÁQUINAS-HERRAMIENTA ESTÁNDAR</h3>
+      <div class="r-hstack" class="fragmemt fade-in-then-ou">
+        <p class="fragment">Sierra</p>
+        <img class="fragment" src="https://www.kaykaindustrial.com.mx/cdn/shop/products/1_630a3def-ccac-4c20-be6c-546de5f85bfe.webp?v=1685031130&width=750" width="50%">
+      </div>
+  </section>
+
+  <section  data-auto-animate data-auto-animate-unmatched="fade">
+    <h3>MÁQUINAS-HERRAMIENTA ESTÁNDAR</h3>
+      <div class="r-hstack" class="fragmemt fade-in-then-ou">
+        <p class="fragment">Fresadora</p>
+        <img class="fragment" src="https://polipastos.expert/cdn/shop/products/44035702_379221019285399_3301062956913000448_n_5e4b859d-3276-419b-aa78-fbdc885d7976_1024x1024@2x.png?v=1539711510" width="30%">
+      </div>
+  </section>
+
+  <section  data-auto-animate data-auto-animate-unmatched="fade">
+    <h3>MÁQUINAS-HERRAMIENTA ESTÁNDAR</h3>
+      <div class="r-hstack" class="fragmemt fade-in-then-ou">
+        <p class="fragment">Esmeriladoras y rectificadoras</p>
+        <img class="fragment" src="https://www.demaquinasyherramientas.com/wp-content/uploads/2012/12/Esmeriladora-de-banco-Makita.jpg" width="30%">
+      </div>
+  </section>
+</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes,RevealMath.KaTeX ]
+			});
+		</script>
+	</body>
+</html>
