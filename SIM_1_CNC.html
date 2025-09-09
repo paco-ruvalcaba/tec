@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Sistemas Integrados de Manufactura</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<!-- <link rel="stylesheet" href="dist/theme/white.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/league.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/beige.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/night.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/serif.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/simply.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/solarized.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/moon.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/dracula.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/sky.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/blood.css"> -->
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+    <!-- <link rel="stylesheet" href="mystyle.css"> -->
+	</head>
+	<body>
+
+	<script src="plugin/math/math.js"></script>
+
+		<div class="reveal">
+			<div class="slides">
+
+<!-- ...................................................................................  -->
+<!-- .........................Inicio de la presentación.................................  -->
+<!-- ...................................................................................  -->
+<section>
+	<!-- <a href="https://revealjs.com"> -->
+	<img src="logotec.png" width="10% alt="Logo Tec Lerdo" style="background: transparent;" class="demo-logo">
+	<!-- </a> -->
+	<h4>Tema 1.1 </h4>
+	<h2>Introducción a las Máquinas-Herramienta</h2>
+	<p>
+	<small>Maestro: <a href="https://franciscoruvalcaba.carrd.co/">Francisco Ruvalcaba Grandos</a>
+	</small>
+	</p>
+</section>
+
+				<section data-markdown
+				data-separator="^---"
+				data-separator-vertical="^\n"
+				data-separator-notes="^xxx">
+				<textarea data-template>
+# MÁQUINAS DE CONTROL NUMÉRICO POR COMPUTADORA <!-- .element: class="fragment"-->
+xxx
+El control numérico por computadora (CNC) ha traído cam-bios notables a la industria de las máquinas-herramienta.
+
+- Piezas a alta velocidad<!-- .element: class="fragment"-->
+- Alta precisión <!-- .element: class="fragment"-->
+- Se puede reproducir una misma pieza, con la misma exactitud, cualquier cantidad de veces.<!-- .element: class="fragment"-->
+- Comandos de operación son ejecutados <!-- .element: class="fragment"-->
+  - velocidad<!-- .element: class="fragment"-->
+  - exactitud<!-- .element: class="fragment"-->
+  - eficiencia <!-- .element: class="fragment"-->
+  - confiabilidad <!-- .element: class="fragment"-->
+- Las máquinas-herramienta reemplazadas por <mark>máquinas CNC</mark><!-- .element: class="fragment"-->
+xxx
+Las nuevas máquinas-herramienta controladas por compu-tadora han permitido que la industria produzca piezas a una velocidad y con una precisión completamente imposibles de lograr hace sólo algunos años. Si el programa de la pieza se ha preparado apropiadamente, se puede reproducir una mis-ma pieza, con la misma exactitud, cualquier cantidad de ve-ces. Los comandos de operación que controlan la máquina-herramienta son ejecutados con una velocidad, exactitud, eficiencia y confiabilidad increíbles. En muchos casos en to-do el mundo, las máquinas-herramienta de uso común ac-tual, operadas a mano están siendo reemplazadas por las máquinas de tipo CNC operadas por computadora.
+---
+#### centros de mordazas y de tornear 
+
+![](centro_torneado.svg)
+xxx
+Los centros de mordazas y de tornear (Figura 1-10A y B), el equivalente en CNC del torno, son capaces de maquinar piezas redondas en un minuto o dos, lo que a un mecánico experimentado le tomaría un hora producir. El centro de mordazas (chuck) está diseñado para maquinar piezas en un mandril o en algún otro medio de sujeción y manejo. El centro de torneado, similar al centro de mordazas, está di-señado principalmente para piezas de trabajo del tipo de barras eje, que deben quedar sujetas mediante algún tipo de contrapunto.
+
+![](centro_torneadob.svg)
+xxx
+Los centros de mordazas y de tornear (Figura 1-10A y B), el equivalente en CNC del torno, son capaces de maquinar piezas redondas en un minuto o dos, lo que a un mecánico experimentado le tomaría un hora producir. El centro de mordazas (chuck) está diseñado para maquinar piezas en un mandril o en algún otro medio de sujeción y manejo. El centro de torneado, similar al centro de mordazas, está di-señado principalmente para piezas de trabajo del tipo de barras eje, que deben quedar sujetas mediante algún tipo de contrapunto.
+---
+# Máquinas de electroerosión <!-- .element: class="fragment"-->
+![](edm.png) <!-- .element: class="fragment"-->
+
+- Utilizan un proceso de erosión por chispa controlada<!-- .element: class="fragment" data-fragment-index="1"-->
+- EDM más comunes<!-- .element: class="fragment" data-fragment-index="2"-->
+  - Corte por hilo metálico<!-- .element: class="fragment" data-fragment-index="3"-->
+    - Alambre Móvil<!-- .element: class="fragment" data-fragment-index="5"-->
+  - Ariete vertical.<!-- .element: class="fragment" data-fragment-index="4"-->
+    - Herramienta formadora<!-- .element: class="fragment" data-fragment-index="6"-->
+xxx
+Las máquinas de electroerosión (EDM, por sus siglas en inglés) utilizan un proceso de erosión por chispa controlada entre la herramienta de corte y la pieza de trabajo para eli-minar metal. Las dos máquinas EDM más comunes son las de corte por hilo metálico y la del tipo de ariete vertical. La EDM de corte por hilo metálico utiliza un alambre móvil pa-ra cortar los bordes internos y externos de una pieza. La EDM vertical del tipo de ariete, comúnmente conocida como la máquina de penetración de dados, generalmente alimen-ta una herramienta formadora hacia la pieza de trabajo pa-ra reproducir su contorno.
+
+- Maquinado por electroerosión<!-- .element: class="fragment"-->
+- Maquinado electro-químico<!-- .element: class="fragment"-->
+- Rectificado electrolítico<!-- .element: class="fragment"-->
+- Maquinado láser<!-- .element: class="fragment"-->
+xxx
+El maquinado por electroerosión, el maquinado electro-químico, el rectificado electrolítico, y el maquinado láser han hecho posible maquinar los nuevos materiales de la era espacial y producir formas que eran difíciles y a veces imposi-bles de hacer mediante otros métodos.
+---
+# Robots
+![](https://aeromaquinados.com/wp-content/uploads/2023/11/My-project-1-16-3-1-500x500.webp)<!-- .element: class="fragment"-->
+
+- Manejar materiales<!-- .element: class="fragment"-->
+- Cambiar accesorios de máquina-herramienta<!-- .element: class="fragment"-->
+- Una de las áreas de crecimiento más rápido en la industria de la manufactura.<!-- .element: class="fragment"-->
+xxx
+El principio del control numérico también se ha aplica-do a los robots, que hoy en día son capaces de manejar ma-teriales y de cambiar accesorios de máquina-herramienta con tanta facilidad y probablemente con mayor eficiencia que una persona. La robótica se ha convertido en una de las áreas de crecimiento más rápido en la industria de la manufactura.
+<!-- Desde su desarrollo, el láser ha sido aplicado a varias áreas de la manufactura. Los láser ahora se utilizan cada vez más para el corte y soldadura de todo tipo de metales in-cluso aquellos que han resultado imposibles de cortar y sol-dar mediante otros métodos. Los rayos láser pueden perfo-rar diamante y cualquier otro material conocido, y también se utilizan en dispositivos de medición y topografía extrema-damente precisos, y como dispositivos sensores. -->
+<!-- Con la introducción de numerosas máquinas y herra-mientas de corte especiales, la producción ha aumentado enormemente en comparación con la que se obtenía con máquinas-herramienta convencionales. Muchos productos se producen automáticamente mediante un flujo continuo de piezas terminadas provenientes de estas máquinas espe-ciales. El control de productos y los elevados ritmos de pro-ducción nos permiten disfrutar del placer y la conveniencia de automóviles, cortadoras mecánicas de césped, lavadoras automáticas, estufas, y docenas de otros productos moder-nos. Sin las máquinas-herramienta básicas necesarias para la producción en masa y la automatización, los costos de muchos lujos de que ahora disfrutamos, serían prohibitivos. -->
+				</textarea>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes,RevealMath.KaTeX ]
+			});
+		</script>
+	</body>
+</html>
