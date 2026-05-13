@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Instalaciones Eléctricas</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<!-- <link rel="stylesheet" href="dist/theme/black.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/white.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/league.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/beige.css"> -->
+		<link rel="stylesheet" href="dist/theme/night.css">
+		<!-- <link rel="stylesheet" href="dist/theme/serif.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/simply.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/solarized.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/moon.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/dracula.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/sky.css"> -->
+		<!-- <link rel="stylesheet" href="dist/theme/blood.css"> -->
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+
+	<script src="plugin/math/math.js"></script>
+
+		<div class="reveal">
+			<div class="slides">
+
+<!-- ...................................................................................  -->
+<!-- .........................Inicio de la presentación.................................  -->
+<!-- ...................................................................................  -->
+<section>
+	<!-- <a href="https://revealjs.com"> -->
+	<!-- <img src="uttlogo.png" alt="UTT Logo" style="background: transparent;" class="demo-logo"> -->
+	<!-- </a> -->
+	<h4>Tema:</h4>
+	<h2>Cálculo de calibre de conductor por caída de tensión</h2>
+	<p>
+	<small>Maestro: <a href="https://franciscoruvalcaba.carrd.co/">Francisco Ruvalcaba Grandos</a>
+	</small>
+	</p>
+</section>
+
+<section data-markdown
+data-separator="^---"
+data-separator-vertical="^\n"
+data-separator-notes="^Note:">
+<textarea data-template>
+## Concepto de caída de tensión
+- Disminución del voltaje en un conductor por su longitud y resistencia.
+- Ejemplo: lámpara a 4 m vs. lámpara a 50 m → diferencia de voltaje.
+- A mayor distancia, mayor caída de tensión.
+---
+## Cómo controlar la caída de tensión
+- Incrementar el calibre del conductor (más grosor de cobre/aluminio).
+- Valores recomendados según norma:
+  - <span title="Los circuitos alimentadores son los tramos de cableado que llevan la energía desde el interruptor principal (después del medidor) hasta el tablero de distribución o cuadro de cargas, donde se conectan los circuitos derivados">Alimentadores:</span> máximo **3%**
+  - Circuitos derivados: máximo **3%**
+  - Total combinado: máximo **5%**
+
+### Diagrama Unifilar
+![du](diag1-w.svg)
+
+![du2](diag2-w.svg)
+Note:
+## Normativa aplicable
+- Artículo **215, Nota 2** → circuitos alimentadores.
+- Artículo **210-19, Nota 4** → circuitos derivados.
+- Definición de alimentador: del interruptor principal al tablero de cargas.
+</textarea>
+</section>
+
+<section>
+  <section>
+    <h2>FÓRMULAS</h2>
+  </section>
+  <section>
+    <h3>Cálculo del Calibre por corriente monofasico</h3>
+      $$I=\frac{P_D}{V_{LN} \cos\varphi}$$
+  </section>
+  <section>
+    <h3>Cálculo del Calibre por corriente trifásico</h3>
+      $$I=\frac{P_D}{\sqrt{3}\cdot V \cos\varphi}$$
+  </section>
+  <section>
+  <h3>Cálculo del porcentaje por caída de tensión</h3>
+  $$\% e = \frac{K \cdot L \cdot I}{V \cdot S}$$
+  </section>
+  <section>
+    <ul>
+      <li> $K =$ constante (4 monofásico, 2 bifásico, 2√3 trifásico).</li>
+      <li> $L =$ longitud del conductor (m).</li>
+      <li> $I =$ corriente (A).</li>
+      <li> $V =$ voltaje nominal.</li>
+      <li> $S =$ sección transversal del conductor (mm²).</li>
+    </ul>
+  </section>
+</section>
+
+<section data-markdown
+data-separator="^---"
+data-separator-vertical="^\n"
+data-separator-notes="^Note:">
+<textarea data-template>
+## Ejemplo 1 
+<!-- (20 m, 1300 W, 127 V) -->
+
+Calcular el calibre del conductor del circuito alimentador, si la potencia total instalada es de $1300\ W$ a una tensión nominal de $127\ V$. Suponiendo que el punto mas lejano está a una distancia de $20\ m$ del interruptor principal.
+
+Calculamos la corriente
+$$I=\frac{1,300}{127\times 0.9}=11.37\ A$$
+Para calcular el porcentaje de caída de tensión necesitamos el tamaño de la sección transversal del conductor.
+
+Esto se calcula con la siguiente fórmula:
+$$D=0.005\cdot 92^{[(36-AWG)/39]}$$
+- $D =$ diámetro del alambre en pulgadas
+- $AWG =$ calibre del alambre
+
+Así que para un cable de calibre $14\ AWG$ tendríamos
+$$D=0.005\cdot 92^{[(36-14)/39]}=0.06408\ plg$$
+Note:
+Utilizamos el *circular mil* (CM), que es otra medida estándar para caracterizar un alambre de sección circular según su calibre. Un *mil* corresponde a una milésima de pulgada. Con un diámetro de $0.06408\ plg$ tendríamos $64.08\ mils$.
+Lo que necesitamos ahora es el área de la sección circular del conductor. Por lo tanto:
+$$A\textrm{(en circular mils)}=(D\textrm{ en mils})^{2}$$
+por lo tanto
+$$A=64.08^2=4,106.25\ \textrm{CM}$$
+Se debe menciona que el área real de la sección circular de un alambre se obtiene mediante la formula tradicional
+$$A=\pi r^2$$
+Esto se expresa como milésimas de pulgadas al cuadrado (*square mils* o SM), por lo que el área estará dada por:
+$$A=\frac{\pi D^2}{4},$$
+en nuestro caso
+$$A=\frac{\pi\cdot 64.08^2}{4}\equiv 3,225.04\ \textrm{square mils}$$
+De manera más directa tenemos
+$$A(SM)=0.7854\cdot A(CM)$$
+y
+$$A(CM)=D^2$$
+
+El área real de la sección circular de un alambre se obtiene mediante la formula tradicional
+$$A=\pi r^2$$
+o
+$$A=\frac{\pi D^2}{4},$$
+en nuestro caso
+$$A=\frac{\pi\cdot 0.06408^2}{4}= 0.00322504\ plg^2$$
+
+Ahora convertimos $plg^2$ a $mm^2$:
+$$1\ plg=2.54\ cm,$$
+entonces
+$$1\ plg^2=(25.4)^2=645.16\ mm^2.$$
+
+Entonces en $mm^2$ el área sería
+$$A=0.00322504\times 645.26 = 2.0809\ mm^2$$
+
+Toto lo anterior se encuentra resumido en las siguientes tablas:
+- Diametros de alambres y cables en el si stema AWG.
+- Características geométricas de los conductores desnudos.
+
+[Consultamos la tabla de calibres](https://paco-ruvalcaba.github.io/tec/e405c5ecd1704c628b7cb83cccc1c5cb.png)
+
+- Corriente calculada: **11.37 A**
+- Por ampacidad: calibre **14 AWG**
+- Por caída de tensión:
+  - 14 AWG → **3.44%** (no cumple)
+  - 12 AWG → **2.16%** (sí cumple)
+- **Resultado:** calibre recomendado → **12 AWG**
+---
+## Ejemplo 2 (60 m, 2198 W, 127 V)
+- Corriente: **19.23 A**
+- Por ampacidad: calibre **10 AWG**
+- Por caída de tensión:
+  - 10 AWG → **6.90%** (no cumple)
+  - 8 AWG → **4.34%** (no cumple)
+  - 6 AWG → **2.73%** (sí cumple)
+- **Resultado:** calibre recomendado → **6 AWG**
+---
+## Ejemplo 3 (30 m, 6000 W, 220 V bifásico)
+- Corriente: **27.27 A**
+- Por ampacidad: calibre **10 AWG** (justo) → mejor **8 AWG**
+- Por caída de tensión:
+  - Constante K = 2 (bifásico)
+  - 8 AWG → **0.89%** (cumple)
+- **Resultado:** calibre recomendado → **8 AWG**
+---
+## Ejemplo 4 (30 m, 6000 W, 220 V trifásico)
+- Corriente: **15.74 A**
+- Por ampacidad: calibre **12 AWG**
+- Por caída de tensión:
+  - Constante K = 2√3 (trifásico)
+  - 12 AWG → **2.24%** (cumple)
+- **Resultado:** calibre recomendado → **12 AWG**
+---
+## Conclusiones
+- La selección de calibre debe considerar **ampacidad y caída de tensión**.
+- La distancia del alimentador es crítica para evitar pérdidas.
+- Cumplir con los porcentajes normativos garantiza seguridad y eficiencia.
+- Siempre verificar con la fórmula y tablas de sección transversal.
+
+</textarea>
+</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				slideNumber: 'h.v',
+
+  katex: {
+    version: 'latest',
+    delimiters: [
+      { left: '$$', right: '$$', display: true },
+      { left: '$', right: '$', display: false },
+      { left: '\\(', right: '\\)', display: false },
+      { left: '\\[', right: '\\]', display: true },
+      { left: '\[', right: '\]', display: true },
+    ],
+    ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+  },				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes,RevealMath.KaTeX,RevealZoom ]
+			});
+		</script>
+	</body>
+</html>
